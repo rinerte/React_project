@@ -4,7 +4,7 @@ import apiClient from '../api/apiClient'
 export const getUsers = async () => {
   try {
     const response = await apiClient.get('/users')
-    return response.data
+    return [{ id: 1, name: 'John Doe', email: 'john@example.com' }]
   } catch (error) {
     throw error
   }
