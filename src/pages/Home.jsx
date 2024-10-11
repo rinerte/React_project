@@ -11,6 +11,7 @@ const Home = () => {
     const fetchUsers = async () => {
       try {
         const data = await getUsers()
+        console.log('Users data:', data);
         setUsers(data)
       } catch (err) {
         setError(err.message || 'Error fetching users')

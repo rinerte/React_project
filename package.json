@@ -41,5 +41,8 @@
     "workerDirectory": [
       "public"
     ]
+  },
+  "resolutions": {
+    "cookie": "^0.7.1"
   }
 }
